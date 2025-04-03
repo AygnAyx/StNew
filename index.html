@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Menü</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Sayfalar (Butonlarla) -->
+<div class="page-scroll">
+    <section id="page-0" class="page">
+    <!-- Üst Kısım -->
+        <div class="sidepage-hero" style="background-image: url('images/maincover/background-4.png');">
+            <a href="https://paradisopalms.dijital.menu">
+                <img class="sidepage-hero__logo--l" src="images/logo-trans.png" alt="Paradiso Palms Logosu">
+            </a>
+        </div>
+        <div class="menu-container">
+            <!-- İlk dört buton (2 sütun) -->
+            <div class="menu-grid">
+                <div class="button-container" style="background-image: url('images/menubutton/pizza-1.png');">
+                    <div class="middle-square" onclick="scrollToPage(1)">
+                        <div class="text-square"><h2>Pizza</h2></div>
+                    </div>
+                </div>
+                <div class="button-container" style="background-image: url('images/menubutton/makarna-1.png');">
+                    <div class="middle-square" onclick="scrollToPage(2)">
+                    <div class="text-square"><h2>Makarna</h2></div>
+                    </div>
+                </div>
+                <div class="button-container" style="background-image: url('images/menubutton/emakarna-1.png');">
+                    <div class="middle-square" onclick="scrollToPage(3)">
+                    <div class="text-square"><h2>El Yapımı Makarna</h2></div>
+                    </div>
+                </div>
+                <div class="button-container" style="background-image: url('images/menubutton/salata-1.png');">
+                    <div class="middle-square" onclick="scrollToPage(4)">
+                    <div class="text-square"><h2>Salatalar</h2></div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tam genişlikte butonlar -->
+            <div class="full-width-button" style="background-image: url('images/menubutton/tea-coffee-1.png');">
+                <div class="middle-square" onclick="scrollToPage(5)">
+                <div class="text-square"><h2>Kahve & Çay</h2></div>
+                </div>
+            </div>
+            <div class="full-width-button" style="background-image: url('images/menubutton/tatlılar.png');">
+                <div class="middle-square" onclick="scrollToPage(6)">
+                <div class="text-square"><h2>Kruvasan & Tiramisu</h2></div>
+                </div>
+            </div>
+            <div class="full-width-button" style="background-image: url('images/menubutton/drinks.jpg');">
+                <div class="middle-square" onclick="scrollToPage(7)">
+                <div class="text-square"><h2>Soğuk İçecekler</h2></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>    
+<!-- Menü Sayfaları -->
+<section id="page-1" class="page">
+    <div class="page-scroll">
+        <!-- Üst Kısım -->
+        <div class="menu-title-container" style="padding-top: 0px;">
+            <div class="sidepage-hero" style="background-image: url('images/cover/cover-1.png');">
+                <a>
+                    <h2 style="color:#ffffff; border-bottom: 3px solid #f38a49">Napolitan Pizza</h2>
+                </a>
+            </div>
+        </div>
+        <div class="mobile-page">
+            <div class="menu-item-container">
+                <div class="menu-left-container">
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image-col">
+                                <div class="menu-image">
+                                    <img src="images/Pages-Menu/Pizza/04.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Pizza/04.png')">
+                                </div>
+                                <p>150 TL</p>
+                            </div>
+                            <span  onclick="openModal('images/Pages-Menu/Pizza/04.png')"><b>Margarita</b><br>Margherita<span class="hidden-content" style="display: flex; margin-top: 10px;">Napolitan sos, taze fesleğen ve eriyen mozzarella ile klasik bir İtalyan lezzeti.</span></span>
+                        </div>
+                    </div>
+                    <div class="divider" style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image-col">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Pizza/05.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/Pages-Menu/Pizza/05.png')">
+                            </div>
+                            <p>180 TL</p>
+                            </div>
+                            <span  onclick="openModal('images/Pages-Menu/Pizza/05.png')"><b>Fesleğen ve Kuru Domates</b><br><span style="font-size: 18px">Pizza con Basilico e Pomodori Secchi</span>
+                            <span class="hidden-content" style="display: flex; margin-top: 10px;">
+                                Pesto sos, güneşte kurutulmuş domates ve peynirle hafif ve aromatik bir tat sunuyor.
+                            </span>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image-col">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Pizza/03.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/Pages-Menu/Pizza/03.png')">
+                            </div>
+                            <p>210 TL</p>
+                            </div>
+                            <span  onclick="openModal('images/Pages-Menu/Pizza/03.png')"><b>Füme Etli Pizza</b><br><span style="font-size: 18px">Pizza con Carne Affumicata</span>
+                            <span class="hidden-content" style="display: flex; margin-top: 10px;">
+                                Mozzarella ve krema bazlı sos, füme et, taze roka ve hafif bal dokunuşuyla tamamlanıyor.
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image-col">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Pizza/01.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/Pages-Menu/Pizza/01.png')">
+                            </div>
+                            <p>190 TL</p>
+                            </div>
+                            <span  onclick="openModal('images/Pages-Menu/Pizza/01.png')"><b>Tavuklu Barbekü Soslu Pizza</b><br><span style="font-size: 18px">Pizza con Pollo e Salsa Barbecue</span>
+                            <span class="hidden-content" style="display: flex; margin-top: 10px;">
+                                Barbekü soslu tavuk, susam ve taze soğanla tatlı, dumanlı ve enfes bir uyum yakalıyor.
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image-col">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Pizza/02.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/Pages-Menu/Pizza/02.png')">
+                            </div>
+                            <p>180 TL</p>
+                            </div>
+                            <span  onclick="openModal('images/Pages-Menu/Pizza/02.png')"><b>Dört Peynirli Pizza</b><br>Pizza ai Quattro Formaggi
+                            <span class="hidden-content" style="display: flex; margin-top: 10px;">
+                                Mozzarella, cheddar, parmesan ve beyaz peynir, krema bazlı sosla buluşup damakta eriyor.
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="divider2"  style="background-color: #f38a49"></div>
+                </div>
+                <div class="menu-right-container">
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image-col">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Pizza/07.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/Pages-Menu/Pizza/07.png')">
+                            </div>
+                            <p>170 TL</p>
+                            </div>
+                            <span  onclick="openModal('images/Pages-Menu/Pizza/07.png')"><b>Vejeteryan Pizza</b><br>Pizza Vegetariana
+                            <span class="hidden-content" style="display: flex; margin-top: 10px;">
+                                Sebzeler, Napolitan sos ve peynirle doğanın en güzel tatlarını bir araya getiriyor.
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image-col">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Pizza/06.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/Pages-Menu/Pizza/06.png')">
+                            </div>
+                            <p>200 TL</p>
+                            </div>
+                            <span  onclick="openModal('images/Pages-Menu/Pizza/06.png')"><b>Sucuklu Pizza</b><br>Pizza con Salsiccia Turca
+                            <span class="hidden-content" style="display: flex; margin-top: 10px;">
+                                Baharatlı sucuk, eriyen mozzarella ve Napolitan sos, taş fırında mükemmel kıvama ulaşıyor.
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image-col">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Pizza/07.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/Pages-Menu/Pizza/07.png')">
+                            </div>
+                            <p>220 TL</p>
+                            </div>
+                            <span  onclick="openModal('images/Pages-Menu/Pizza/07.png')"><b>Biftekli Pizza</b><br>Pizza con Bistecca
+                            <span class="hidden-content" style="display: flex; margin-top: 10px;">
+                                Yumuşak biftek dilimleri, biberler ve peynirle her lokmada lezzet şöleni yaşatıyor.
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image-col">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Pizza/08.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/Pages-Menu/Pizza/08.png')">
+                            </div>
+                            <p>210 TL</p>
+                            </div>
+                            <span  onclick="openModal('images/Pages-Menu/Pizza/08.png')"><b>Ton Balıklı Pizza</b><br>Pizza con Tonno
+                            <span class="hidden-content" style="display: flex; margin-top: 10px;">
+                                Ton balığı, mısır ve dereotu ile hafif ama doyurucu bir alternatif.
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image-col">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Pizza/07.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/Pages-Menu/Pizza/07.png')">
+                            </div>
+                            <p>200 TL</p>
+                            </div>
+                            <span  onclick="openModal('images/Pages-Menu/Pizza/07.png')"><b>Tavuklu Pizza</b><br>Pizza con Pollo
+                            <span class="hidden-content" style="display: flex; margin-top: 10px;">
+                                Tavuk, taze sebzeler ve krema sosuyla zengin ve dengeli bir lezzet sunuyor.
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="page-2" class="page">
+    <div class="page-scroll">
+        <div class="menu-title-container" style="padding-top: 0px;">
+            <div class="sidepage-hero" style="background-image: url('images/cover/cover-2.png');">
+                <a>
+                    <h2 style="color: #ffffff   ; border-bottom: 3px solid #f3c365  ">Makarna</h2>
+                </a>
+            </div>
+        </div>
+        <div class="mobile-page">
+            <div class="menu-item-container">
+                <div class="menu-left-container">
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Makarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Makarna/01.png')">
+                            </div>
+                            <p>160 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/Makarna/01.png')"><b>Acılı Penne Makarna</b><br>Penne Piccanti<span class="hidden-content" style="display: flex; margin-top: 10px;">Napolitan sos, acı biber ve parmesan peyniriyle lezzet dolu bir deneyim.</span></span>
+                    </div>    
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Makarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Makarna/01.png')">
+                            </div>
+                            <p>170 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/Makarna/01.png')"><b>Limonlu Makarna</b><br>Pasta al Limone<span class="hidden-content" style="display: flex; margin-top: 10px;">Limon rendesi, krema ve karabiber ile hafif ve ferah bir lezzet.</span></span>                    
+                    </div>    
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Makarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Makarna/01.png')">
+                        </div>
+                        <p>170 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/Makarna/01.png')"><b>Fesleğen Soslu Makarna</b><br>Pasta al Pesto<span class="hidden-content" style="display: flex; margin-top: 10px;">Pesto sos ve kuru domatesin mükemmel uyumu.</span></span>
+                    </div>    
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Makarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Makarna/01.png')">
+                        </div>
+                        <p>200 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/Makarna/01.png')"><b>Ton Balıklı Makarna</b><br>Pasta al Tonno<span class="hidden-content" style="display: flex; margin-top: 10px;">Ton balığı, zeytin ve mantarın kremalı bir lezzete dönüşmesi.</span></span>
+                    </div>    
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Makarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Makarna/01.png')">
+                        </div>
+                        <p>170 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/Makarna/01.png')"><b>Patlıcanlı Makarna</b><br>Pasta alle Melanzane<span class="hidden-content" style="display: flex; margin-top: 10px;">Kızarmış patlıcan, Napolitan sos ve parmesanla doyurucu bir seçenek.</span></span>
+                    </div>    
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Makarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Makarna/01.png')">
+                        </div>
+                        <p>150 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/Makarna/01.png')"><b>Köri Soslu Makarna</b><br>Pasta al Curry<span class="hidden-content" style="display: flex; margin-top: 10px;">Tavuk, mantar ve köri sosun baharatlı ve kremsi birleşimi.</span></span>
+                    </div>    
+                    </div>
+                    <div class="divider2" style="background-color: #f3c365"></div>
+                </div>
+                <div class="menu-right-container">
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Makarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Makarna/01.png')">
+                        </div>
+                        <p>160 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/Makarna/01.png')"><b>Domates Soslu Makarna</b><br>Pasta al Pomodoro<span class="hidden-content" style="display: flex; margin-top: 10px;">Bu makarna için özel sos içerikleri mevcuttur.</span></span>
+                    </div>    
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Makarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Makarna/01.png')">
+                        </div>
+                        <p>160 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/Makarna/01.png')"><b>Vejeteryan Makarna</b><br>Pasta Vegetariana<span class="hidden-content" style="display: flex; margin-top: 10px;">Sebzeler, Napolitan sos ve dereotu ile hafif ama lezzetli.</span></span>
+                    </div>    
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Makarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Makarna/01.png')">
+                        </div>
+                        <p>180 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/Makarna/01.png')"><b>Tavuklu Mantarlı Makarna</b><br>Pasta con Pollo e Funghi<span class="hidden-content" style="display: flex; margin-top: 10px;">Krema soslu tavuk ve mantarın mükemmel uyumu.</span></span>
+                    </div>    
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Makarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Makarna/01.png')">
+                        </div>
+                        <p>170 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/Makarna/01.png')"><b>Dört Peynirli Makarna</b><br>Pasta ai Quattro Formaggi<span class="hidden-content" style="display: flex; margin-top: 10px;">Mozzarella, cheddar, parmesan ve beyaz peynirin nefis karışımı.</span></span>
+                    </div>    
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Makarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Makarna/01.png')">
+                        </div>
+                        <p>190 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/Makarna/01.png')"><b>Biftekli Noodle</b><br>Noodles con Bistecca<span class="hidden-content" style="display: flex; margin-top: 10px;">Marine edilmiş biftek, biber ve soya sosuyla Asya mutfağından bir tat.</span></span>
+                    </div>    
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Makarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Makarna/01.png')">
+                        </div>
+                        <p>180 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/Makarna/01.png')"><b>Kuru Domatesli Makarna</b><br>Pasta con Pomodori Secchi<span class="hidden-content" style="display: flex; margin-top: 10px;">Güneşte kurutulmuş domates ve krema ile aromatik bir lezzet. </span></span>
+                    </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="page-3" class="page">
+    <div class="page-scroll">
+        <div class="menu-title-container" style="padding-top: 0px;">
+            <div class="sidepage-hero" style="background-image: url('images/cover/cover-3.png');">
+                <a>
+                    <h2 style="color:#ffffff; border-bottom: 3px solid #f38a49">El Yapımı Makarna</h2>
+                </a>
+            </div>
+        </div>
+        <div class="menu-item-container">
+            <div class="menu-right-container" style="gap: 60px; margin-top: 40px;">
+                <div class="menu-item" style="color: #c9fd06; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(94, 255, 0, 0.342), 0 0 5px rgba(94, 255, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/ElYapımıMakarna/02.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/ElYapımıMakarna/02.png')">
+                        </div>
+                        <p>170 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/ElYapımıMakarna/02.png')"><b>Fettucini</b><br>Fettuccine Fatte a Mano<span class="hidden-content" style="display: flex; margin-top: 10px;">Tavuk, mantar ve parmesanla özel bir lezzet.</span></span>
+                    </div>
+                </div>
+                <div class="divider2"  style="background-color: #f38a49"></div>
+            </div>
+            <div class="menu-left-container" style="gap: 60px; margin-top: 40px;">
+                <div class="menu-item" style="color: #c9fd06; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(94, 255, 0, 0.342), 0 0 5px rgba(94, 255, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/ElYapımıMakarna/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/ElYapımıMakarna/01.png')">
+                        </div>
+                        <p>180 TL</p>
+                        </div>
+                        <span  onclick="openModal('images/Pages-Menu/ElYapımıMakarna/01.png')"><b>Peynirli Tortelloni</b><br><span style="font-size: 16px">Tortelloni Fatti a Mano al Formaggio</span><span class="hidden-content" style="display: flex; margin-top: 10px;">Kremalı sosla sunulan peynir dolgulu el yapımı tortellini.</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="page-4" class="page">
+    <div class="page-scroll">
+        <div class="menu-title-container" style="margin-right: 50px; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);">
+            <div class="sidepage-hero" style="background-image: url('images/cover/cover-4.png');">
+                <a>
+                    <h2 style="color:#ffffff; border-bottom: 3px solid #f38a49">Salatalar</h2>
+                </a>
+            </div>
+        </div>
+        <div class="menu-item-container">
+            <div class="menu-right-container" style="gap: 10px; margin-top: 40px;">
+                <div class="menu-item"  style="color: #c9fd06; text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgba(0, 0, 0, 0.192), 0 0 5px rgba(0, 0, 0, 0.171);">
+                <div class="menu-header">
+                    <div class="menu-image-col">
+                    <div class="menu-image">
+                        <img src="images/Pages-Menu/Salata/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Salata/01.png')">
+                    </div>    
+                    <p>170 TL</p>
+                    </div>
+                    <span   onclick="openModal('images/Pages-Menu/Salata/01.png')"><b>Sezar Salata</b><br>Insalata Cesare <span class="hidden-content" style="display: flex; margin-top: 10px;">Iceberg, tavuk, parmesan ve özel Sezar sosla klasik bir lezzet.</span></span>
+                </div>
+                </div>
+                <div class="divider" style="background-color: #7b024d"></div>
+                <div class="menu-item"  style="color: #c9fd06; text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgba(0, 0, 0, 0.192), 0 0 5px rgba(0, 0, 0, 0.171);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Salata/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Salata/01.png')">
+                        </div>        
+                        <p>200 TL</p>
+                        </div>
+                    <span   onclick="openModal('images/Pages-Menu/Salata/01.png')"><b>Gavurdağ Salatası</b><br>Insalata di Gavurdağı<span class="hidden-content" style="display: flex; margin-top: 10px;">Ceviz ve peynirle zenginleşen taze sebzeli bir tat.</span></span>
+                    </div>
+                </div>
+                <div class="divider2"  style="background-color: #f38a49"></div>
+            </div>
+            <div class="menu-left-container" style="gap: 10px; margin-top: 40px;">
+                <div class="menu-item"  style="color: #c9fd06; text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgba(0, 0, 0, 0.192), 0 0 5px rgba(0, 0, 0, 0.171);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Salata/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Salata/01.png')">
+                        </div>        
+                        <p>220 TL</p>
+                        </div>
+                    <span   onclick="openModal('images/Pages-Menu/Salata/01.png')"><b>Akdeniz Salatası</b><br>Insalata Mediterranea<span class="hidden-content" style="display: flex; margin-top: 10px;">Yeşillikler, cherry domates ve sosla ferah bir seçenek.</span></span>
+                    </div>
+                </div>
+                <div class="divider" style="background-color: #7b024d"></div>
+                <div class="menu-item"  style="color: #c9fd06; text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgba(0, 0, 0, 0.192), 0 0 5px rgba(0, 0, 0, 0.171);">
+                    <div class="menu-header">
+                        <div class="menu-image-col">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Salata/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Salata/01.png')">
+                        </div>        
+                        <p>210 TL</p>
+                        </div>
+                    <span   onclick="openModal('images/Pages-Menu/Salata/01.png')"><b>Yoğurtlu Salata</b><br>Insalata con Yogurt<span class="hidden-content" style="display: flex; margin-top: 10px;">Sarımsaklı yoğurt, tavuk ve tereyağında sotelenmiş bir lezzet.</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="page-5" class="page">
+    <div class="page-scroll">
+        <div class="menu-title-container">
+            <h2>Kruvasan & Tramisu</h2>
+        </div>
+        <div class="mobile-page2">
+            <div class="menu-item-container" style="gap: 0px; column-gap: 0px;">
+                <div class="menu-right-container" style="margin-top: 0px; line-height: 0.8;">
+                    <div class="menu-item" style="text-align:left; flex-direction: start; max-width: 500px; padding: 30px 0px 15px 0px;">
+                        <div class="menu-header" style="justify-content: space-between; width: 100%; display: flex; gap: 15px; align-items: center;">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Tatlılar/01.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Tatlılar/01.png')">
+                            </div>   
+                            <span onclick="openModal('images/Pages-Menu/Tatlılar/01.png')">Tramisu</span>
+                            <span class="menu-price">120 TL</span> <!-- Fiyatı burada ekledik -->
+                        </div> 
+                    </div>
+                    <div class="divider" style="max-width: 350px;"></div>
+                    <div class="menu-item" style="text-align:left; flex-direction: start; max-width: 500px; padding: 30px 0px 15px 0px;">
+                        <div class="menu-header" style="justify-content: space-between; width: 100%; display: flex; gap: 15px; align-items: center;">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Tatlılar/04.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Tatlılar/04.png')">
+                            </div>       
+                        <span style="white-space: nowrap;" onclick="openModal('images/Pages-Menu/Tatlılar/04.png')">Sade Kruvasan</span>
+                        <span class="menu-price">70 TL</span> <!-- Fiyatı burada ekledik -->
+                        </div>
+                    </div>
+                    <div class="divider" style="max-width: 350px;"></div>
+                    <div class="menu-item" style="text-align:left; flex-direction: start; max-width: 500px; padding: 30px 0px 15px 0px;">
+                        <div class="menu-header" style="justify-content: space-between; width: 100%; display: flex; gap: 15px; align-items: center;">
+                            <div class="menu-image">
+                                <img src="images/Pages-Menu/Tatlılar/03.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Tatlılar/03.png')">
+                        </div>       
+                        <span style="white-space: nowrap;" onclick="openModal('images/Pages-Menu/Tatlılar/03.png')">Meyveli Kruvasan</span>
+                        <span class="menu-price">120 TL</span> <!-- Fiyatı burada ekledik -->
+                        </div> 
+                    </div>
+                    <div class="divider" style="max-width: 350px;"></div>
+                    <div class="menu-item" style="text-align:left;     flex-direction: start; padding: 15px 0px 15px 40px;">
+                        <span style="line-height: 0.5; font-size: 15px; color: #ffffff;">(Çikolata Veya Pastacı Kremasıyla)</span>
+                    </div>
+                    <div class="menu-item" style="text-align:left; flex-direction: start; padding: 15px 0px 10px 80px;">
+                        <span>Muz</span>
+                    </div>
+                    <div class="menu-item" style="text-align:left; flex-direction: start; padding: 15px 0px 10px 80px;">
+                        <span>Çilek</span>
+                    </div>
+                    <div class="menu-item" style="text-align:left; flex-direction: start; padding: 15px 0px 10px 80px;">
+                        <span>Kivi<span style="line-height: 1.8; font-size: 20px">&nbsp;&nbsp;(Mevsimine Göre)</span></span>
+                    </div>
+                    <div class="menu-item" style="text-align:left; flex-direction: start;  max-width: 500px; padding: 30px 0px 15px 0px;">
+                    <div class="menu-header" style="justify-content: space-between; width: 100%; display: flex; gap: 15px; align-items: center;">
+                        <div class="menu-image">
+                            <img src="images/Pages-Menu/Tatlılar/02.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/Pages-Menu/Tatlılar/02.png')">
+                        </div>      
+                        <span style="white-space: nowrap;" onclick="openModal('images/Pages-Menu/Tatlılar/02.png')">Sandviç Kruvasan</span>
+                        <span class="menu-price">120 TL</span> <!-- Fiyatı burada ekledik -->
+                    </div>
+                    </div>
+                    <div class="divider" style="max-width: 350px;"></div>
+                    <div class="menu-item" style="text-align:left;     flex-direction: start; padding: 15px 0px 10px 80px;">
+                        <span>Peynir</span>
+                    </div>
+                    <div class="menu-item" style="text-align:left;     flex-direction: start; padding: 15px 0px 10px 80px;">
+                        <span>Domates</span>
+                    </div>
+                    <div class="menu-item" style="text-align:left;     flex-direction: start; padding: 15px 0px 10px 80px;">
+                        <span>Salatalık</span>
+                    </div>
+                    <div class="menu-item" style="text-align:left;     flex-direction: start; padding: 15px 0px 10px 80px;">
+                        <span>Marul</span>
+                    </div>
+                </div>
+                <div class="menu-left-container" style="margin-top: 40px; line-height: 0.8;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="page-6" class="page">
+    <div class="page-scroll">
+        <div class="menu-title-container" style="padding-top: 20px;">
+            <h2 style="color: #a53f00; padding-top: 0px; border-bottom: 3px solid #a53f00; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);">Kahve & Çay</h2>
+        </div>
+        <div class="menu-item-container" style="transform: scale(1); column-gap: 0px;">
+            <div class="menu-right-container" style="margin-top: 40px; line-height: 0.6;">
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Espresso</span>
+                    <p style="text-align:right">80 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Americano</span>
+                    <p style="text-align:right">80 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Latte</span>
+                    <p style="text-align:right">90 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Cappuccino</span>
+                    <p style="text-align:right">90 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Filtre Kahve</span>
+                    <p style="text-align:right">70 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Türk Kahvesi</span>
+                    <p style="text-align:right">60 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Sıcak Çikolata</span>
+                    <p style="text-align:right">100 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Çay</span>
+                    <p style="text-align:right">20 TL</p>
+                </div>
+            </div>
+            <div class="menu-left-container">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="page-7" class="page">
+    <div class="page-scroll">
+        <div class="menu-title-container" style="padding-top: 20px;">
+            <h2 style="color:#b10000; border-bottom: 3px solid #b10000">Soğuk İçecekler</h2>
+        </div>
+        <div class="menu-item-container">
+            <div class="menu-right-container" style="margin-top: 40px; line-height: 0.8;">
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 75px 0px 15px 0px";>
+                    <span>Coca Cola Şişe</span>
+                    <p style="text-align:right">50 TL</p>
+                </div>
+                <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
+                    <span>Coca Cola Zero</span>
+                    <p style="text-align:right">50 TL</p>
+                </div>
+                <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
+                    <span>Fanta</span>
+                    <p style="text-align:right">50 TL</p>
+                </div>
+                <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
+                    <span>Sprite</span>
+                    <p style="text-align:right">50 TL</p>
+                </div>
+                <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
+                    <span>Fuse Tea</span>
+                    <p style="text-align:right">50 TL</p>
+                </div>
+                <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
+                    <span>Soda</span>
+                    <p style="text-align:right">25 TL</p>
+                </div>
+                <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
+                    <span>Su</span>
+                    <p style="text-align:right">20 TL</p>
+                </div>
+            </div>
+            <div class="menu-left-container">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="page-8" class="page-scroll">
+    <div class="page-container">
+        <!-- Instagram QR (Sola Yaslı) -->
+        <div class="qr-left">
+            <a href="https://www.instagram.com/stjulianmersin/" target="_blank">
+                <img src="images/qr1.png" alt="Instagram QR">
+                <p class="instagram-text">@StJulianMersin</p>
+            </a>
+        </div>
+
+        <!-- Orta Logo -->
+        <div class="logo-container">
+            <img src="images/logo-icon-trans.png" alt="St. Julian Logo">
+        </div>
+
+        <!-- Konum QR (Sağa Yaslı) -->
+        <div class="qr-right">
+            <a href="https://www.google.com/maps/place/By+Tacos/@36.7735367,34.5403919,20.25z/data=!4m6!3m5!1s0x15278ac2ead7db65:0x1ee602e4a5bd3a28!8m2!3d36.7736472!4d34.5400015!16s%2Fg%2F11klvxvykk?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
+                <img src="images/qr2.png" alt="Konum QR">
+                <p class="address-text">Çiftlikköy Mh, Akademi plaza<br>41/AB, 33110<br>Yenişehir/Mersin</p>
+            </a>
+        </div>
+    </div>
+</section>    
+    
+<!-- Home Butonu (Yeni) -->
+<button class="floating-button" onclick="scrollToTop2(0)">
+    <img src="images/home2.2.png" id="home">
+</button>
+<!-- Instagram Butonu (Yeni) -->
+<a href="https://www.instagram.com/stjulianmersin/" target="_blank" class="instagram-floating-button">
+    <img src="images/inslogo.png" id="instagram">
+</a>
+
+<!-- Modal Penceresi -->
+<div id="imageModal" class="modal">
+    <div class="modal-content-container">
+        <img id="modalImage" src="" alt="Büyütülmüş Resim" class="modal-image">
+        <button onclick="closeModal()" class="close-button">✖</button>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
