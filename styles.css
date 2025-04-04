@@ -180,22 +180,20 @@ h2 {
 
                 .menu-name {
                     font-weight: bold;
-                    color: #f3a565;
-                    text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 208, 0, 0.37), 0 0 5px rgba(255, 196, 0, 0.342); 
+                    color: #da8139;
                     white-space: nowrap; /* İsmin yanındaki boşluğu engeller */
                 }
 
                 .menu-dots {
                     flex-grow: 1;
-                    border-bottom: 2px dotted #f3a565;
+                    border-bottom: 2px dotted #da8139;
                     margin: 0 10px;
                 }
 
                 .menu-price {
                     white-space: nowrap; /* Fiyatın satır atlamasını önler */
                     font-weight: bold;
-                    color: #f3a565;
-                    text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 208, 0, 0.37), 0 0 5px rgba(255, 196, 0, 0.342); 
+                    color: #da8139;
                 }
 
             .menu-desc {
@@ -288,11 +286,12 @@ h2 {
 }
 
 .menu-item2 {
+    font-weight: 600;
     /* width: 400px; */
     width: 100%;
     font-family: 'Alata', cursive;
     color: #f3c365;
-    text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 208, 0, 0.37), 0 0 5px rgba(255, 196, 0, 0.342);
+    text-shadow: 1.5px 1.5px 2px black;
     letter-spacing: 1px;
     font-size: 23px;
     padding: 15px 0px;
@@ -705,6 +704,9 @@ h2 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
     transition: transform 0.2s ease-in-out;
+}
+.text-square h2{
+    white-space: nowrap;
 }
 
 .middle-square:hover {
@@ -1236,6 +1238,9 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    .menu-title-container2 h2 {
+        font-size: 34px;
+    }
     .sidepage-hero {
         display: flex;
         flex-direction: column;
